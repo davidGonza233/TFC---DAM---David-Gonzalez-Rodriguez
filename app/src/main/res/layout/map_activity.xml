@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fragmento del mapa -->
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Botón para centrar en el usuario -->
+    <Button
+        android:id="@+id/btnCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mi Posición"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|end"/>
+
+    <!-- Botón para cambiar tipo de mapa -->
+    <Button
+        android:id="@+id/btnChangeMapType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambiar Mapa"
+        android:layout_margin="16dp"
+        android:layout_gravity="bottom|start"/>
+</FrameLayout>
